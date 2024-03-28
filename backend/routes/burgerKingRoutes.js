@@ -157,7 +157,7 @@ Router.get('/additem/:id', fetchuser, KingCart, async function (req, res) {
   }
 });
 Router.delete(
-  '/deleteitem/:id',
+  '/deleteitemfromCart/:id',
   fetchuser,
   KingCart,
   async function (req, res) {
