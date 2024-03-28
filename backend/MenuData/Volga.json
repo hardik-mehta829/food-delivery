@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Aloo Gobhi",
+    "price": 60,
+    "class": "Non-Veg",
+    "image": "AlooGobhi.jpg"
+  },
+  {
+    "name": "Mix Veg",
+    "price": 50,
+    "class": "Veg",
+    "image": "MixVeg.jpg"
+  },
+  {
+    "name": "Veg Kofta",
+    "price": 100,
+    "class": "Veg",
+    "image": "VegKofta.jpg"
+  },
+  {
+    "name": "Missi roti",
+    "price": 50,
+    "class": "Veg",
+    "image": "missi-butter-roti.jpg"
+  }
+]

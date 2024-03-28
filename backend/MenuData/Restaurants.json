@@ -1,0 +1,52 @@
+[
+  {
+    "name": "BurgerKing",
+    "description": "Burger , fries ,Soft drink",
+    "image": "burgerking.jpeg"
+  },
+  {
+    "name": "Patel",
+    "description": "North indian , south indian , chinese",
+    "image": "Patel.jpg"
+  },
+  {
+    "name": "Tansen",
+    "description": "North indian , south indian , chinese",
+    "image": "test.jpg"
+  },
+  {
+    "name": "PunjabiZyaka",
+    "description": "North indian , south indian , chinese",
+    "image": "Zyaka.jpg"
+  },
+  {
+    "name": "McDonald",
+    "description": "Burger,fries,Paneer wrap",
+    "image": "McDonald-2.jpeg"
+  },
+  {
+    "name": "Raj",
+    "description": "North indian , south indian , chinese",
+    "image": "test-2.jpg"
+  },
+  {
+    "name": "ChawlaChicken",
+    "description": "Non-veg food and Soup",
+    "image": "Chawla-Chicken.jpg"
+  },
+  {
+    "name": "Volga",
+    "description": "North indian , south indian , chinese",
+    "image": "test-4.jpg"
+  },
+  {
+    "name": "DreamArena",
+    "description": "Beverages",
+    "image": "test-3.jpg"
+  },
+  {
+    "name": "SherePunjabi",
+    "description": "North indian , south indian , chinese",
+    "image": "Shere-Punjabi.jpg"
+  }
+]

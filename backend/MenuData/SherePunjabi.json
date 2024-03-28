@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Palak Paneer",
+    "price": 160,
+    "class": "Veg",
+    "image": "PalakPaneer.jpg"
+  },
+  {
+    "name": "Paneer Lababdar",
+    "price": 150,
+    "class": "Veg",
+    "image": "PaneerLabadar.jpg"
+  },
+  {
+    "name": "Plain roti",
+    "price": 10,
+    "class": "Veg",
+    "image": "tandoori-roti.jpg"
+  },
+  {
+    "name": "Butter Naan",
+    "price": 20,
+    "class": "Veg",
+    "image": "naan.jpg"
+  }
+]

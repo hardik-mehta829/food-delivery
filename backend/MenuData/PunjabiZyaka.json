@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Plain Naan",
+    "price": 35,
+    "class": "'Veg'",
+    "image": "naan.jpg"
+  },
+  {
+    "name": "Laccha Paratha",
+    "price": 40,
+    "class": "Veg",
+    "image": "laccha-paratha.jpg"
+  },
+  {
+    "name": "Dal fry",
+    "price": 120,
+    "class": "Veg",
+    "image": "dal-fry.jpg"
+  },
+  {
+    "name": "Dal makhani",
+    "price": 180,
+    "class": "Veg",
+    "image": "dal-makhani.jpg"
+  },
+  {
+    "name": "Mushroom masala",
+    "price": 180,
+    "class": "Veg",
+    "image": "mushroom-masala.jpg"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Roti Roomali",
+    "price": 14,
+    "class": "Veg",
+    "image": "tandoori-roti.jpg"
+  },
+  {
+    "name": "Butter Roti",
+    "price": 14,
+    "class": "Veg",
+    "image": "missi-butter-roti.jpg"
+  },
+  {
+    "name": "Lababdar Soya Chaap",
+    "price": 170,
+    "class": "Veg",
+    "image": "butter-soya-chaap.jpg"
+  },
+  {
+    "name": "Paneer Butter Masala",
+    "price": 145,
+    "class": "Veg",
+    "image": "kadai-paneer.jpg"
+  },
+  {
+    "name": "Chole Paneer",
+    "price": 135,
+    "class": "Veg",
+    "image": "chole-paneer.jpg"
+  },
+  {
+    "name": "Malai Kofta",
+    "price": 145,
+    "class": "Veg",
+    "image": "malai-kofta.jpg"
+  }
+]

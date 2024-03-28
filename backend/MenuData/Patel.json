@@ -1,0 +1,48 @@
+[
+  {
+    "name": "Tandoori Masala Chaap",
+    "price": 140,
+
+    "class": "Veg",
+    "image": "tandoori-masala-chaap.jpg"
+  },
+  {
+    "name": "Shahi Paneer",
+    "price": 145,
+
+    "class": "Veg",
+    "image": "shahi-paneer.jpg"
+  },
+  {
+    "name": "Kadai Paneer",
+    "price": 145,
+
+    "class": "Veg",
+    "image": "kadai-paneer.jpg"
+  },
+  {
+    "name": "Butter Soya Chaap",
+    "price": 170,
+
+    "class": "Veg",
+    "image": "butter-soya-chaap.jpg"
+  },
+  {
+    "name": "Kaju Curry",
+    "price": 86,
+    "class": "Veg",
+    "image": "kaju-curry.jpg"
+  },
+  {
+    "name": "Roti Tandoori",
+    "price": 10,
+    "class": "Veg",
+    "image": "tandoori-roti.jpg"
+  },
+  {
+    "name": "Missi Butter Roti",
+    "price": 30,
+    "class": "Veg",
+    "image": "missi-butter-roti.jpg"
+  }
+]

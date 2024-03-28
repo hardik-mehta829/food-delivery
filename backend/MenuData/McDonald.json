@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Schezwan Veg Burger",
+    "price": 74,
+    "description": "Makhani Paneer Patty with Mint Mayo and Makhani Mayo ,onions wrapped in a Malabar Paratha",
+    "class": "Veg",
+    "image": "schezwan Burger.jpeg"
+  },
+  {
+    "name": "McSpicy® Chicken",
+    "price": 194,
+    "description": "Juicy Chicken meat coated in crispy batter with a kick of spice topped with a creamy sauce and crispy lettuce.",
+    "class": "Non-Veg",
+    "image": "McSpicyChicken.jpeg"
+  },
+  {
+    "name": "Chicken Kebab Roll",
+    "price": 171,
+    "description": "Cooked Makhani Chicken Patty topped with Mint Mayo, Makhani sauce and onions wrapped in a Malabar Paratha.",
+    "class": "Non-Veg",
+    "image": "ChickenKebabRoll.jpeg"
+  },
+  {
+    "name": "Aloo Wrap",
+    "price": 91,
+    "description": "Aloo Tikki patty topped with tandoori sauce, onions and lettuce wrapped in a tortilla.",
+    "class": "Veg",
+    "image": "AlooWrap.jpeg"
+  },
+  {
+    "name": "McAloo Tikki Burger  Double patty",
+    "price": 86,
+    "description": "A tikki delight: Potato and peas patty topped with veg sauce, ketchup, tomatoes and onions with toasted buns",
+    "class": "Veg",
+    "image": "McAlooTikkiDoublePatty.jpeg"
+  },
+  {
+    "name": "McAloo Tikki",
+    "price": 56,
+    "description": "A tikki delight: Potato and peas patty topped with veg sauce, ketchup, tomatoes and onions with toasted buns",
+    "class": "Veg",
+    "image": "McAlooTikki.jpeg"
+  },
+  {
+    "name": "McChicken",
+    "price": 144,
+    "description": "Delightfully crispy chicken sandwich with a crispy chicken patty topped with mayonnaise and shredded iceberg lettuce served on a perfectly toasty bun.",
+    "class": "Non-Veg",
+    "image": "McChicken.jpeg"
+  },
+  {
+    "name": "McVeggie",
+    "price": 114,
+    "description": "A patty made of potatoes, peas, carrots, beans, onions, red capsicum and a selection of Indian spices, topped with crispy lettuce, mayonnaise, packed into sesame toasted buns.",
+    "class": "Veg",
+    "image": "McVeggie.jpeg"
+  },
+  {
+    "name": "Cheesy Fries",
+    "price": 144,
+    "description": "Hi, it's cheese on this side! The all-time favourite fries with a generous dollop of cheesy yet smoky chipotle sauce.",
+    "class": "Veg",
+    "image": "CheesyFries.jpeg"
+  },
+  {
+    "name": "Large Fries",
+    "price": 125,
+    "description": "World Famous Fries®. These epic, fan-favourite fries are crispy and golden on the outside and fluffy on the inside.",
+    "class": "Veg",
+    "image": "LargeFries.jpeg"
+  }
+]

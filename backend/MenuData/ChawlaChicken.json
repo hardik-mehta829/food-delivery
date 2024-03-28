@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Chicken Fried Rice",
+    "price": 160,
+    "class": "Non-Veg",
+    "image": "ChickenFriedRice.jpg"
+  },
+  {
+    "name": "Veg biryani",
+    "price": 150,
+    "class": "Veg",
+    "image": "VegBiryani.jpg"
+  },
+  {
+    "name": "Tomato Soup",
+    "price": 10,
+    "class": "Veg",
+    "image": "TomatoSoup.jpg"
+  },
+  {
+    "name": "Chicken Soup",
+    "price": 50,
+    "class": "Veg",
+    "image": "ChickenSoup.jpg"
+  }
+]

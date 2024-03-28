@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Crispy Veg",
+    "price": 70,
+    "description": "A crisp veggie patty, slathered with delicious mayo, topped with our extra fresh and soft bun!",
+    "class": "Veg",
+    "image": "schezwan Burger.jpeg"
+  },
+  {
+    "name": "Crispy Veg double patty",
+    "price": 99,
+    "description": "Our tribute to classic American taste. BK veg Double patty, garden fresh crispy lettuce, juicy tomato (seasonal) & our signature sauce.",
+    "class": "Veg",
+    "image": "McAlooTikkiDoublePatty.jpeg"
+  },
+  {
+    "name": "Crispy Chicken",
+    "price": 99,
+    "description": "made with 100% chicken patty, seasoned and breaded and carefully layered with fresh lettuce, ripe tomato, and creamy mayonnaise on a toasted sesame seed bun.",
+    "class": "Veg",
+    "image": "McChicken.jpeg"
+  },
+  {
+    "name": "Crispy Chicken Double Patty",
+    "price": 139,
+    "description": "Our Crispy Chicken is made with 100% chicken patty, seasoned and breaded and carefully layered with fresh lettuce, ripe tomato, and creamy mayonnaise on a toasted sesame seed bun.",
+    "class": "Non-Veg",
+    "image": "McSpicyChicken.jpeg"
+  },
+  {
+    "name": "Veg Whopper",
+    "price": 179,
+    "description": "The Plant-based Whopper® consists of a juicy flame-grilled, 100% plant-based*, sustainably sourced soy patty topped with freshly sliced tomatoes, fresh lettuce, creamy mayonnaise, ketchup, crunchy pickles, and sliced white onions on a toasted sesame seed bun.",
+    "class": "Veg",
+    "image": "chicken-whopper.jpg"
+  },
+  {
+    "name": "Chicken Whopper",
+    "price": 199,
+    "description": "Our signature Whopper with 7 layers between the buns. Flame-Grilled chicken patty, fresh onions, crispy lettuce, juicy tomatoes (seasonal), tangy gherkins, creamy and smoky sauces with new premium glazed buns. Swaad Aisa, India Jaisa.",
+    "class": "Non-Veg",
+    "image": "chicken-whopper.jpg"
+  },
+  {
+    "name": "Fiery Chicken",
+    "price": 199,
+    "description": "The breaded crispy 100% chicken fillet just got Fierce! Featuring fiery chilli mayo, angry onions and zesty jalapeño slices, this is one spicy mouthful!",
+    "class": "Non-Veg",
+    "image": "chicken-whopper.jpg"
+  },
+  {
+    "name": "Medium fries",
+    "price": 115,
+    "description": "The Perfect Crispy Partner",
+    "class": "Veg",
+    "image": "ChessyFries.jpeg"
+  },
+  {
+    "name": "King fries",
+    "price": 130,
+    "description": "made from fresh potatoes, golden in colour, and crisp. Enjoy them at their best with tangy Heinz ketchup or creamy mayo sauce",
+    "class": "Veg",
+    "image": "ChessyFries.jpeg"
+  }
+]

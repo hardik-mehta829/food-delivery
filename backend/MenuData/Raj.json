@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Dam aloo",
+    "price": 60,
+    "class": "Veg",
+    "image": "DamAloo.jpg"
+  },
+  {
+    "name": "Stuffed tomato",
+    "price": 50,
+    "class": "Veg",
+    "image": "StuffedTomato.jpg"
+  },
+  {
+    "name": "Veg Korma",
+    "price": 100,
+    "class": "Veg",
+    "image": "VegKorma.jpg"
+  },
+  {
+    "name": "Roti",
+    "price": 10,
+    "class": "Veg",
+    "image": "Roti.jpg"
+  }
+]

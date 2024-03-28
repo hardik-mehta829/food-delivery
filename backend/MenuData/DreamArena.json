@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Adrak Wali chai",
+    "price": 60,
+    "class": "Veg",
+    "image": "AdrakWaliChai.jpeg"
+  },
+  {
+    "name": "Masala Chai",
+    "price": 50,
+    "class": "Veg",
+    "image": "MasalaChai.jpeg"
+  },
+  {
+    "name": "Hot Coffee",
+    "price": 100,
+    "class": "Veg",
+    "image": "HotCoffee.jpeg"
+  },
+  {
+    "name": "Cold Cofee",
+    "price": 140,
+    "class": "Veg",
+    "image": "ColdCoffee.jpeg"
+  }
+]
