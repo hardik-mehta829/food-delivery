@@ -81,13 +81,23 @@ export function userSignup(name, email, password, passwordconfirm) {
   return async function (dispatch, getState) {
     try {
       console.log(name, email, password, passwordconfirm);
-      const res = await fetch('http://127.0.0.1:3000/api/v1/users/createuser', {
-        method: 'POST',
-        headers: {
-          'Content-type': 'application/json',
-        },
-        body: JSON.stringify({ name, email, password, passwordconfirm }),
-      });
+      // const res = await fetch('http://127.0.0.1:3000/api/v1/users/createuser', {
+      //   method: 'POST',
+      //   headers: {
+      //     'Content-type': 'application/json',
+      //   },
+      //   body: JSON.stringify({ name, email, password, passwordconfirm }),
+      // });
+      const res = await fetch(
+        'https://food-backend-9xt6.onrender.com/api/v1/users/createuser',
+        {
+          method: 'POST',
+          headers: {
+            'Content-type': 'application/json',
+          },
+          body: JSON.stringify({ name, email, password, passwordconfirm }),
+        }
+      );
       if (!res.ok) {
         dispatch({
           type: 'user/Alert',
@@ -140,13 +150,23 @@ export function userLogin(email, password) {
     };
   return async function (dispatch, getState) {
     try {
-      const res = await fetch('http://127.0.0.1:3000/api/v1/users/login', {
-        method: 'POST',
-        headers: {
-          'Content-type': 'application/json',
-        },
-        body: JSON.stringify({ email, password }),
-      });
+      // const res = await fetch('http://127.0.0.1:3000/api/v1/users/login', {
+      //   method: 'POST',
+      //   headers: {
+      //     'Content-type': 'application/json',
+      //   },
+      //   body: JSON.stringify({ email, password }),
+      // });
+      const res = await fetch(
+        'https://food-backend-9xt6.onrender.com/api/v1/users/login',
+        {
+          method: 'POST',
+          headers: {
+            'Content-type': 'application/json',
+          },
+          body: JSON.stringify({ email, password }),
+        }
+      );
       if (!res.ok) {
         dispatch({
           type: 'user/Alert',
@@ -180,13 +200,23 @@ export function userLogout() {
 export function Allorders() {
   return async function (dispatch, getState) {
     dispatch({ type: 'cart/setLoading', payload: true });
-    const res = await fetch('http://127.0.0.1:3000/api/v1/users/allorders', {
-      method: 'GET',
-      headers: {
-        'Content-type': 'application/json',
-        token: localStorage.getItem('token'),
-      },
-    });
+    // const res = await fetch('http://127.0.0.1:3000/api/v1/users/allorders', {
+    //   method: 'GET',
+    //   headers: {
+    //     'Content-type': 'application/json',
+    //     token: localStorage.getItem('token'),
+    //   },
+    // });
+    const res = await fetch(
+      'https://food-backend-9xt6.onrender.com/api/v1/users/allorders',
+      {
+        method: 'GET',
+        headers: {
+          'Content-type': 'application/json',
+          token: localStorage.getItem('token'),
+        },
+      }
+    );
     const data = await res.json();
     console.log(data);
     dispatch({ type: 'user/setpastorders', payload: data.orders });
@@ -196,8 +226,19 @@ export function Allorders() {
 export function RateMeal(id, rating) {
   return async function (dispatch, getState) {
     console.log(id, rating);
+    // const res = await fetch(
+    //   `http://127.0.0.1:3000/api/v1/orders/review/${id}`,
+    //   {
+    //     method: 'POST',
+    //     headers: {
+    //       'Content-type': 'application/json',
+    //       token: localStorage.getItem('token'),
+    //     },
+    //     body: JSON.stringify({ rating: rating }),
+    //   }
+    // );
     const res = await fetch(
-      `http://127.0.0.1:3000/api/v1/orders/review/${id}`,
+      `https://food-backend-9xt6.onrender.com/api/v1/orders/review/${id}`,
       {
         method: 'POST',
         headers: {
