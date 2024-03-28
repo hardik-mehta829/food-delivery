@@ -26,7 +26,8 @@ function Restaurant({ title, description, image, ratingsAverage }) {
         style={{
           width: 350,
         }}
-        cover={<img alt='example' src={`../../Images/${image}`} />}
+        // cover={<img alt='example' src={`../../Images/${image}`} />}
+        cover={<img alt='example' src={`/Images/${image}`} />}
       >
         <Meta
           title={
