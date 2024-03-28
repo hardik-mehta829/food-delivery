@@ -2,7 +2,7 @@
   "name": "food-delivery",
   "private": true,
   "version": "0.0.0",
-  "proxy": "https://www.yourwebsitename.com",
+  "proxy": "https://food-backend-9xt6.onrender.com",
   "type": "module",
   "scripts": {
     "dev": "vite",
