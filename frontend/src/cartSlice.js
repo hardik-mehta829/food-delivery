@@ -116,13 +116,23 @@ export const { activerestro, selectrestro, emptycart } = cartSlice.actions;
 export function Allrestaurants() {
   return async function (dispatch, getState) {
     dispatch({ type: 'cart/setLoading', payload: true });
-    const res = await fetch(`http://127.0.0.1:3000/api/v1/Restaurants/`, {
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/json',
-        token: localStorage.getItem('token'),
-      },
-    });
+    // const res = await fetch(`http://127.0.0.1:3000/api/v1/Restaurants/`, {
+    //   method: 'GET',
+    //   headers: {
+    //     'Content-Type': 'application/json',
+    //     token: localStorage.getItem('token'),
+    //   },
+    // });
+    const res = await fetch(
+      `https://food-backend-9xt6.onrender.com/api/v1/Restaurants/`,
+      {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+          token: localStorage.getItem('token'),
+        },
+      }
+    );
     const data = await res.json();
     dispatch({ type: 'cart/allrestaurants', payload: data });
   };
@@ -131,8 +141,19 @@ export function addItem(itemid, restname) {
   return async function (dispatch, getState) {
     const cleanedRestname = restname.replace(':', '');
     const { cart } = getState();
+    // const res = await fetch(
+    //   `http://127.0.0.1:3000/api/v1/${cleanedRestname}/additem/${itemid}`,
+    //   {
+    //     method: 'GET',
+    //     headers: {
+    //       'Content-Type': 'application/json',
+    //       token: localStorage.getItem('token'),
+    //     },
+    //   }
+    // );
     const res = await fetch(
-      `http://127.0.0.1:3000/api/v1/${cleanedRestname}/additem/${itemid}`,
+      `https://food-backend-9xt6.onrender.com/api/v1/${cleanedRestname}/additem/${itemid}
+      `,
       {
         method: 'GET',
         headers: {
@@ -161,8 +182,18 @@ export function addItem(itemid, restname) {
 export function removeItem(itemid, restname) {
   return async function (dispatch, getState) {
     const cleanedRestname = restname.replace(':', '');
+    // const res = await fetch(
+    //   `http://127.0.0.1:3000/api/v1/${cleanedRestname}/deleteitemfromCart/${itemid}`,
+    //   {
+    //     method: 'DELETE',
+    //     headers: {
+    //       'Content-Type': 'application/json',
+    //       token: localStorage.getItem('token'),
+    //     },
+    //   }
+    // );
     const res = await fetch(
-      `http://127.0.0.1:3000/api/v1/${cleanedRestname}/deleteitemfromCart/${itemid}`,
+      `https://food-backend-9xt6.onrender.com/api/v1/${cleanedRestname}/deleteitemfromCart/${itemid}`,
       {
         method: 'DELETE',
         headers: {
@@ -186,8 +217,18 @@ export function Opencart() {
     // console.log('hello');
     const { cart } = getState();
     // console.log(cart);
+    // const res = await fetch(
+    //   `http://127.0.0.1:3000/api/v1/${cart.selectedRestaurant}/viewcart`,
+    //   {
+    //     method: 'GET',
+    //     headers: {
+    //       'Content-Type': 'application/json',
+    //       token: localStorage.getItem('token'),
+    //     },
+    //   }
+    // );
     const res = await fetch(
-      `http://127.0.0.1:3000/api/v1/${cart.selectedRestaurant}/viewcart`,
+      `https://food-backend-9xt6.onrender.com/api/v1/${cart.selectedRestaurant}/viewcart`,
       {
         method: 'GET',
         headers: {
@@ -203,8 +244,11 @@ export function Opencart() {
 export function initialCart(id) {
   // console.log(id);
   return async function (dispatch, getState) {
+    // const res = await fetch(
+    //   `http://127.0.0.1:3000/api/v1/users/finduser/${id}`
+    // );
     const res = await fetch(
-      `http://127.0.0.1:3000/api/v1/users/finduser/${id}`
+      `https://food-backend-9xt6.onrender.com/api/v1/users/finduser/${id}`
     );
     const userdata = await res.json();
     console.log(userdata);
@@ -247,7 +291,10 @@ export function initialCart(id) {
 export function selectMenu(restname) {
   return async function (dispatch, getState) {
     dispatch({ type: 'cart/setLoading' });
-    const res = await fetch(`http://127.0.0.1:3000/api/v1/${restname}`);
+    // const res = await fetch(`http://127.0.0.1:3000/api/v1/${restname}`);
+    const res = await fetch(
+      `https://food-backend-9xt6.onrender.com/api/v1/${restname}`
+    );
     const menu = await res.json();
     // console.log(menu);
     dispatch({ type: 'cart/FullMenu', payload: menu.data });
@@ -258,8 +305,22 @@ export function Placeorder() {
     dispatch({ type: 'cart/setLoading', payload: true });
     const { cart } = getState();
     const { user } = getState();
+    // const res = await fetch(
+    //   `http://127.0.0.1:3000/api/v1/${cart.selectedRestaurant}/placeorder`,
+    //   {
+    //     method: 'POST',
+    //     headers: {
+    //       'Content-Type': 'application/json',
+    //       token: localStorage.getItem('token'),
+    //     },
+    //     body: JSON.stringify({
+    //       location: user.location,
+    //       date: new Date().toDateString(),
+    //     }),
+    //   }
+    // );
     const res = await fetch(
-      `http://127.0.0.1:3000/api/v1/${cart.selectedRestaurant}/placeorder`,
+      `https://food-backend-9xt6.onrender.com/api/v1/${cart.selectedRestaurant}/placeorder`,
       {
         method: 'POST',
         headers: {
@@ -287,8 +348,18 @@ export function Placeorder() {
 }
 export function Fetchorder(id) {
   return async function (dispatch, getState) {
+    // const res = await fetch(
+    //   `http://127.0.0.1:3000/api/v1/orders/singleorder/${id}`,
+    //   {
+    //     method: 'GET',
+    //     headers: {
+    //       'Content-Type': 'application/json',
+    //       token: localStorage.getItem('token'),
+    //     },
+    //   }
+    // );
     const res = await fetch(
-      `http://127.0.0.1:3000/api/v1/orders/singleorder/${id}`,
+      `https://food-backend-9xt6.onrender.com/api/v1/orders/singleorder/${id}`,
       {
         method: 'GET',
         headers: {
@@ -306,8 +377,18 @@ export function Fetchorder(id) {
 export function clearCart() {
   return async function (dispatch, getState) {
     const { cart } = getState();
+    // const res = await fetch(
+    //   `http://127.0.0.1:3000/api/v1/${cart.selectedRestaurant}/clearcart`,
+    //   {
+    //     method: 'GET',
+    //     headers: {
+    //       'Content-Type': 'application/json',
+    //       token: localStorage.getItem('token'),
+    //     },
+    //   }
+    // );
     const res = await fetch(
-      `http://127.0.0.1:3000/api/v1/${cart.selectedRestaurant}/clearcart`,
+      `https://food-backend-9xt6.onrender.com/api/v1/${cart.selectedRestaurant}/clearcart`,
       {
         method: 'GET',
         headers: {
@@ -327,14 +408,20 @@ export function sortedMenu(num) {
     dispatch({ type: 'cart/setLoading', payload: true });
     const { cart } = getState();
     if (num === 1) {
+      // const res = await fetch(
+      //   `http://127.0.0.1:3000/api/v1/${cart.activeRestaurant}?sort=price`
+      // );
       const res = await fetch(
-        `http://127.0.0.1:3000/api/v1/${cart.activeRestaurant}?sort=price`
+        `https://food-backend-9xt6.onrender.com/api/v1/${cart.activeRestaurant}?sort=price`
       );
       const menu = await res.json();
       dispatch({ type: 'cart/FullMenu', payload: menu.data });
     } else {
+      // const res = await fetch(
+      //   `http://127.0.0.1:3000/api/v1/${cart.activeRestaurant}?sort=-price`
+      // );
       const res = await fetch(
-        `http://127.0.0.1:3000/api/v1/${cart.activeRestaurant}?sort=-price`
+        `https://food-backend-9xt6.onrender.com/api/v1/${cart.activeRestaurant}?sort=-price`
       );
       const menu = await res.json();
       dispatch({ type: 'cart/FullMenu', payload: menu.data });
