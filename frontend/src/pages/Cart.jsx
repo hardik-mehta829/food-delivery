@@ -108,7 +108,7 @@ function Cart() {
         </div>
       ) : (
         <div className='flex items-center flex-col text-2xl'>
-          <img width='200px' src='../public/cart.png' />
+          <img width='200px' src='/cart.png' />
           <span>The cart is empty ,add some items to it</span>
           <Button
             type='text'
