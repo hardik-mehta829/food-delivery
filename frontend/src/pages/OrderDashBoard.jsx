@@ -18,6 +18,7 @@ const starsArray = Array.from({ length: 5 }, (_, index) => (
 ));
 import { Fetchorder, Placeorder } from '../cartSlice';
 import { useNavigate } from 'react-router-dom';
+import Spinner from './Spinner';
 function OrderDashBoard() {
   const dispatch = useDispatch();
   const state = useSelector((state) => state.cart);
@@ -118,7 +119,7 @@ function OrderDashBoard() {
           </div>
         </div>
       ) : (
-        <div>Loading</div>
+       <Spinner />
       )}
     </>
   );
