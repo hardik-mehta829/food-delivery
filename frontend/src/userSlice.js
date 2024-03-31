@@ -37,7 +37,7 @@ const userSlice = createSlice({
       state.passwordconfirm = action.payload;
     },
     loading(state, action) {
-      state.isLoading = true;
+      state.isLoading = action.payload;
     },
     getlocation(state, action) {
       state.location = { ...action.payload };
@@ -127,18 +127,25 @@ export function userSignup(name, email, password, passwordconfirm) {
 }
 export function Getlocation() {
   return async function (dispatch, getState) {
-    dispatch({ type: 'user/loading' });
-    const p = new Promise(function (resolve, reject) {
-      navigator.geolocation.getCurrentPosition(resolve, reject);
-    });
-    const position = await p;
-    console.log(position.coords.latitude);
-    const res = await fetch(
-      `https://us1.locationiq.com/v1/reverse?key=pk.ed5da348fddb98b6f40f836a9598514f&&lat=${position.coords.latitude}&lon=${position.coords.longitude}&format=json`
-    );
-    const location = await res.json();
+    try {
+      dispatch({ type: 'user/loading', payload: true });
+      const p = new Promise(function (resolve, reject) {
+        navigator.geolocation.getCurrentPosition(resolve, reject);
+      });
+      const position = await p;
+      console.log(position);
+      console.log(position.coords.latitude);
+      const res = await fetch(
+        `https://us1.locationiq.com/v1/reverse?key=pk.ed5da348fddb98b6f40f836a9598514f&&lat=${position.coords.latitude}&lon=${position.coords.longitude}&format=json`
+      );
+      const location = await res.json();
 
-    dispatch({ type: 'user/getlocation', payload: location });
+      dispatch({ type: 'user/getlocation', payload: location });
+    } catch (err) {
+      console.log(err.message);
+      dispatch({ type: 'user/Alert', payload: { message: err.message } });
+      dispatch({ type: 'user/loading', payload: false });
+    }
   };
 }
 export function userLogin(email, password) {
