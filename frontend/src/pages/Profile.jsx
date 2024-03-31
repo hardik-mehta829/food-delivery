@@ -78,7 +78,7 @@ function Profile() {
   const navigate = useNavigate();
   useEffect(
     function () {
-      if (!user.pastordersarrived) dispatch(Allorders());
+       dispatch(Allorders());
 
       console.log(user.pastorders);
     },
