@@ -24,7 +24,7 @@ function Restaurant({ title, description, image, ratingsAverage }) {
       <Card
         hoverable
         style={{
-          width: 300,
+          width: 320,
         }}
         // cover={<img alt='example' src={`../../Images/${image}`} />}
         cover={<img alt='example' src={`/Images/${image}`} />}
@@ -32,7 +32,7 @@ function Restaurant({ title, description, image, ratingsAverage }) {
         <Meta
           title={
             <div className='flex'>
-              <span className='text-3xl text-black font-semibold'>{title}</span>
+              <span className='text-2xl text-black font-semibold'>{title}</span>
               <span className='text-xl ml-4'>
                 {ratingsAverage.toFixed(2)}
                 <FontAwesomeIcon icon={faStar} className='text-amber-400' />
