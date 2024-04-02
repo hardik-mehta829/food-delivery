@@ -129,7 +129,6 @@ export function Allrestaurants() {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
-          token: localStorage.getItem('token'),
         },
       }
     );
