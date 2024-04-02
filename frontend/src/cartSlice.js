@@ -406,7 +406,7 @@ export function sortedMenu(num) {
   return async function (dispatch, getState) {
     dispatch({ type: 'cart/setLoading', payload: true });
     const { cart } = getState();
-    if (num === 1) {
+    if (num === '1') {
       // const res = await fetch(
       //   `http://127.0.0.1:3000/api/v1/${cart.activeRestaurant}?sort=price`
       // );
